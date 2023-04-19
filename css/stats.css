@@ -1,0 +1,56 @@
+#graphs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.graph {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    box-sizing: border-box;
+    width: 40%;
+    min-width: 20em;
+    max-height: 30em;
+}
+
+.graph select {
+    background-color: #343536;
+    color: white;
+    border: 2px solid #343536;
+    border-radius: 10px;
+    padding: 0.2em 0.5em;
+    margin-bottom: 1em; 
+    width: fit-content;
+    display: inline-block;
+}
+
+canvas, ul {
+    border: 2px solid #343536;
+    border-radius: 10px;
+    background-color: #1a1a1b;
+    padding: 1em;
+    box-sizing: border-box;
+    margin: 0;
+    max-height: 20em;
+}
+
+ul {
+    overflow: auto;
+    list-style: none;
+}
+
+.list-group-item {
+    font-size: 1em;
+}
+
+.list-group-item:not(:last-of-type) {
+    padding-bottom: 8px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin: 0;
+}

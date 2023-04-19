@@ -1,0 +1,64 @@
+.login-Screen{
+    background-color: #1a1a1b;
+    border-radius:25px;
+    border:1px solid #343536;
+    padding:2em;
+    margin-top: 3em;
+}
+.login-Screen input{
+    width: 20em;
+    border-radius:25px;
+    border:1px solid #343536;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    color: white;
+    background-color: #1a1a1b;
+
+    
+}
+::placeholder{
+    padding:0.1em;
+}
+
+h1{
+    text-align: center;
+    color:white;
+}
+
+p{
+    text-align: center;
+    width: fit-content;
+    margin: 0.4em auto;
+}
+
+#login-button{
+    margin-top:2em;
+    padding:1em;
+    border-radius:25px;
+    border:1px solid #343536;
+    background-color: #f24600;
+    color:white;
+}
+#forgot{
+    font-size: 12px;
+    text-align: left;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:0;
+}
+
+#pfpUpload input {
+    box-sizing: border-box;
+    width: 45%;
+}
+
+#login-error {
+    width: 80%;
+    margin: 0;
+}

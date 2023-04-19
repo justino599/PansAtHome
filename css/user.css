@@ -1,0 +1,227 @@
+#content-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.posts {
+    flex-grow: 10;
+    display: flex;
+    flex-direction: column;
+    max-width: 50em;
+    min-width: 400px;
+    width: 60%;
+    height: 100%;
+    margin: 2em 2em 0 2em;
+}
+
+.posts>div {
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+    background-color: #1a1a1b;
+    border: 2px solid #343536;
+    border-radius: 12px;
+    width: 100%;
+}
+
+#user-block {
+    border-radius: 15px;
+    border: 2px solid #343536;
+    margin: 2em 2em 2em 0;
+    padding: 0.8em;
+    height: fit-content;
+    flex-grow: 1;
+    max-width: 15em;
+}
+
+#user-block figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-block img {
+    display: block;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+    width: 5em;
+    height: 5em;
+    margin-bottom: 0.5em;
+}
+
+#user-block figure figcaption {
+    display: block;
+}
+
+#user-block button {
+    width: 100%;
+    height: fit-content;
+    padding: 7px 12px;
+    border-radius: 20px;
+    border: 2px solid #818384;
+    background-color: #1a1a1b;
+    color: white;
+}
+
+#user-block .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.8em 0;
+}
+
+#user-block .info p {
+    display: inline;
+    margin: 0;
+}
+
+#logout {
+    display: flex;
+    justify-content: center;
+    border: white 2px solid;
+    padding: 0.4em 1.4em;
+    font-size: 1.2em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: #b80000;
+    font-weight: 600;
+}
+
+#logout:hover {
+    background-color: #b80000;
+    color: white;
+}
+
+#admin {
+    display: flex;
+    justify-content: center;
+    border: white 2px solid;
+    padding: 0.4em 1.4em;
+    font-size: 1.2em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: #244cc3;
+    font-weight: 600;
+    margin-top: 0.8em;
+}
+
+#admin:hover {
+    background-color: #244cc3;
+    color: white;
+}
+
+@media screen and (max-width: 512px) {
+    .posts {
+        /* width: 100%; */
+        /* max-width: 90%;
+        min-width: 20em; */
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #content-div {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #user-block {
+        margin: 2em;
+        width: 80%;
+    }
+}
+
+.post-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+.post-filter>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    padding: 0.6em 5em;
+    border-radius: 1.6em;
+    border: 2px solid #343536;
+    cursor: pointer;
+}
+.post-filter img {
+    height: 1.4em;
+    margin-right: 0.4em;
+}
+.post-filter h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.active {
+    background-color: #343536;
+    /* color: white; */
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    padding: 0.3em;
+}
+
+.comment .pfp-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment .pfp-line img {
+    display: block;
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border: 2px solid #343536;
+    border-radius: 50%;
+}
+
+.comment .pfp-line div {
+    width: 2px;
+    height: 100%;
+    background-color: #343536;
+    margin-bottom: 0.5em;
+}
+
+.comment .this-comment {
+    margin-left: 1em;
+}
+
+.comment .comment-text {
+    color: white;
+    margin: 0 0 0.5em 0;
+}
+
+.comment .votes {
+    flex-direction: row;
+    margin: 0 1em 0 0;
+    width: auto;
+}
+
+.comment .votes img {
+    height: 1.5em;
+    margin: 0;
+    padding: 5px 1em 5px 0;
+}
+
+.comment .votes div {
+    margin: 0 0.5em;
+    color: white;
+}
+
+.comment .post-toolbar {
+    margin-bottom: 0;
+}

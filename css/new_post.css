@@ -1,0 +1,111 @@
+#page-align {
+    max-width: 60em;
+    width: 100%;
+}
+#page-align>div {
+    margin: 2em 0;
+}
+
+#page-title {
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 0.8em 0;
+}
+#page-title h2 {
+    margin: 0;
+}
+
+#new_post {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1b;
+    border: 2px solid #343536;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+#post-type {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #343536;
+    width: 100%;
+}
+#post-type button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    background-color: #1a1a1b;
+    border:none;
+    width: 100%;
+    padding: 1em;
+}
+#post-type #img-post {
+    border-left: 2px solid #343536;
+}
+#post-type .selected {
+    border-bottom: 3px solid white;
+    background-color: #222222;
+}
+#post-type img {
+    height: 2.5em;
+}
+#post-type h3 {
+    color: white;
+    margin: 0 1em;
+}
+
+#new_post>form {
+    width: auto;
+    margin: 1em;
+}
+#new_post>form>textarea, #img-content {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 0.5em;
+    background-color: #1a1a1b;
+    border-radius: 8px;
+    border: 2px solid #343536;
+    font-family: inherit;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+#post-title {
+    resize: none;
+    height: 2.5em;
+}
+#text-content {
+    resize: vertical;
+    min-height: 100px;
+}
+#img-content {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+#img-content label {
+    margin: 0 1em;
+}
+#img-content input {
+    display: flex;
+    border-radius: 8px;
+    border: 2px dashed #343536;
+    padding: 5% 27%;
+    font-size: 1em;
+    margin-right: 1em;
+}
+#new_post>form button {
+    float: right;
+    background-color: #0079d3;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    font-size: 1.2em;
+    width: fit-content;
+    padding: 0.2em 0.6em;
+    margin-top: 0.5em;
+    font-weight: 500;
+}

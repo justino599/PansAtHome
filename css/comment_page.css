@@ -1,0 +1,127 @@
+#post-and-comments {
+    background-color: #1a1a1b;
+    height: 100%;
+    margin: 1em;
+    border-radius: 8px;
+    border: 2px solid #343536;
+    max-width: 50em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 512px) {
+    #post-and-comments {
+        margin: 0;
+        border-radius: 0;
+        border: none;
+    }
+    .content-div {
+        padding: 0;
+    }
+}
+
+#write-comment {
+    margin: 0em 1.5em 2em 3em;
+    width: auto;
+}
+
+#write-comment>textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    color: white;
+    padding: 0.5em;
+    background-color: #1a1a1b;
+    border-radius: 8px;
+    border: 2px solid #343536;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+#write-comment button {
+    float: right;
+    background-color: #0079d3;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    font-size: 1.2em;
+    width: fit-content;
+    padding: 0.2em 0.6em;
+    margin-top: 0.5em;
+    font-weight: 500;
+}
+
+#comment-sort {
+    color: #4fbcff;
+    font-weight: bold;
+    width: auto;
+    margin: 0 1.5em 1em 3em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #343536;
+}
+
+#comments {
+    width: auto;
+    margin: 0 1.5em 1em 3em;
+
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment .pfp-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment .pfp-line img {
+    display: block;
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border: 2px solid #343536;
+    border-radius: 50%;
+}
+
+.comment .pfp-line div {
+    width: 2px;
+    height: 100%;
+    background-color: #343536;
+    margin-bottom: 0.5em;
+}
+
+.comment .this-comment {
+    margin-left: 1em;
+}
+
+.comment .comment-text {
+    color: white;
+    margin: 0;
+}
+
+.comment .votes {
+    flex-direction: row;
+    margin: 0 1em 0 0;
+    width: auto;
+}
+
+.comment .votes img {
+    height: 1.5em;
+    margin: 0;
+}
+
+.comment .votes div {
+    margin: 0 0.5em;
+    color: white;
+}
+
+.error {
+    margin: 0em 0 1em 3em;
+}
